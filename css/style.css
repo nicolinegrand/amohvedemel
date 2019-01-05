@@ -1,0 +1,1346 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto Slab', serif;
+}
+
+h1,
+h2,
+h3,
+hr,
+p,
+a,
+th,
+td {
+    color: #5E5A56;
+}
+
+a:link {
+        text-decoration: none; 
+    }
+
+a:hover {
+    color: blue; 
+}
+
+
+
+/******************** NAVIGATION *********************/
+
+header {
+    display: flex;
+    background: white;
+    width: 100%;
+    padding: 0 20px 0 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1
+}
+
+#logo-burger {
+    display: flex;
+    align-items: center;
+    margin-left: .5em;
+}
+
+.logo1 {
+    display: flex;
+    width: 75px;
+    position: relative;
+    margin: 2% 0% 2% 0%;
+}
+
+#logo a,
+#main-nav a {
+    color: #5E5A56;
+    text-decoration: none;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: .5em;
+    list-style: none;
+    text-transform: uppercase;
+    align-items: center;
+}
+
+#main-nav a {
+    display: flex;
+    margin: 0 25px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 300;
+}
+
+#main-nav a:hover {
+    color: #877767;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.active {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+label {
+    display: none;
+    color: #5E5A56;
+}
+
+
+/********************* FORSIDE *********************/
+
+#home {
+    background-image: url(../images/amo-baggrund-mobile.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+    height: 90vh;
+}
+
+#home h1 {
+    font-size: 26px;
+    font-weight: 300;
+    padding: 30% 5% 5% 15%;
+    text-align: left;
+}
+
+.se-mere,
+.se-mere1 {
+    width: 40%;
+    margin-left: 30%;
+    margin-bottom: 10%;
+    top: 700px;
+}
+
+
+/************** NYT DESIGN ******************/
+
+
+#velkommen {
+    width: 100%;
+    background: #F2EEEB;
+}
+
+#velkommen h3 {
+    text-align: center;
+    font-weight: 300;
+    padding: 20% 2% 10% 2%;
+    font-size: 25px;
+}
+
+.forside-billede {
+    width: 70%;
+    margin-left: 20%;
+    margin-bottom: 10%;
+}
+
+#velkommen p {
+    text-align: center;
+    padding: 3% 0% 10% 0%;
+    font-weight: 100;
+}
+
+
+#nyt-design {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#nyt-design h2 {
+    text-align: center;
+    margin: 15% 4% 10% 4%;
+    font-weight: 300;
+}
+
+
+.ny-aabning > img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.nyt-logo > img {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5%;
+}
+
+.nyt-design-tekst {
+    padding: 0 10% 15% 5%;
+}
+
+.nyt-design-tekst1 {
+    padding: 0 5% 15% 10%;
+    text-align: right;
+}
+
+.p1 {
+    font-size: 20px;
+    font-weight: 100;
+}
+
+.p2 {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.p3 {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#nyt-design > a > .laes-mere {
+    width: 60%;
+    margin-left: 20%;
+    padding: 0% 0 10% 0;
+}
+
+
+/************* AMO - OM NATUR + **************/
+
+
+#amo-natur {
+    width: 100%;
+    text-align: left;
+    font-size: 13px;
+    font-weight: 300;
+    background: #e5e1df;
+    padding: 8% 4%;
+    display: flex;
+    flex-direction: row;
+}
+
+#amo-natur p {
+    width: 50%;
+    margin-left: 5%;
+}
+
+#amo-natur img {
+    width: 40%;
+    height: 40%;
+    padding: 5% 0 0 10%;
+}
+
+
+/******** OPSKRIFTER - FORSIDE ********/
+
+
+#opskrifter {
+    text-align: center;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+
+.container1 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(auto, 220px);
+    grid-gap: 40px;
+    margin: 4% 4% 10%;
+}
+
+
+.box1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../images/pandekager-opskrift.jpg);
+    background-size: cover;
+}
+
+.box2 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    background: url(../images/avocado-opskrift.jpeg);
+    background-size: cover;
+}
+
+.box3 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    background-image: url(../images/bananmuffin-opskrift.jpeg);
+    background-size: cover;
+}
+
+
+.text1 {
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: 160px;
+}
+
+/************** INDHOLD **********/
+
+#indhold {
+    width: 100%;
+    background: #F2EEEB;
+    padding: 3% 5% 5%;
+}
+
+#indhold h3 {
+    font-weight: 400;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 10% 5%;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+th,
+td {
+    text-align: left;
+    padding: 10px;
+}
+
+th {
+    font-weight: 400;
+}
+
+td {
+    font-weight: 100;
+}
+
+tr:nth-child(even) {
+    background-color: #fff;
+}
+
+
+/********* NYT DESIGN - HVORFOR? ******/
+
+
+#nyt-design-hvorfor {
+    background: #F2EEEB;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+
+.nytdesign-tekst {
+    padding: 10% 15% 10% 5%;
+}
+
+#nyt-design-hvorfor h2 {
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#nyt-design-hvorfor p {
+    font-size: 13px;
+    font-weight: 100;
+}
+
+/**************** NYT DESIGN - KØKKEN ***************/
+
+#amo-koekken {
+    width: 100%;
+}
+
+#amo-koekken h3 {
+    font-weight: 400;
+    text-align: center;
+    padding: 8%;
+}
+
+#amo-koekken p {
+    font-weight: 300;
+    text-align: center;
+    padding: 0% 8% 10%;
+}
+
+#amo-koekken img {
+    width: 100%;
+    padding: 0% 1% 5%;
+}
+
+
+/************ FOOTER ***********/
+
+footer {
+    width: 100%;
+    padding: 0% 0% 5% 4%;
+    display: flex;
+    flex-direction: row;
+    background-image: url(../images/baggrund-footer.png);
+    background-size: cover;
+}
+
+.kontakt {
+    width: 40%
+}
+
+.find-os {
+    width: 45%;
+    padding-left: 5%;
+}
+
+.footer-logo {
+    width: 20%;
+}
+
+.kontakt h3,
+.find-os h3 {
+    font-weight: 400;
+    padding-top: 20%;
+    padding-bottom: 2%;
+}
+
+.kontakt p,
+.find-os p {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.find-os > p > a {
+    color: #5E5A56;
+}
+
+footer .footer-logo .lantmannen {
+    padding-top: 70%;
+    width: 100%;
+}
+
+footer .footer-logo .natur {
+    padding-top: 10%;
+    width: 80%;
+    margin-left: 15%;
+}
+
+
+
+
+
+/*************** OPSKRIFTER ************/
+
+.opskrift-overskrift {
+    background: #e5e1df;
+    width: 100%;
+}
+
+.opskrift-overskrift h1 {
+    font-size: 40px;
+    font-weight: 400;
+    padding: 15% 15% 5% 5%;
+}
+
+.info-opskrift {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 4% 20% 4% 5%;
+}
+
+.antal,
+.tid {
+    display: flex;
+}
+
+.info-opskrift > .antal > img,
+.info-opskrift > .tid > img {
+    width: 40%;
+    height: 100%;
+    padding: 4%;
+}
+
+.info-opskrift > .antal > p,
+.info-opskrift > .tid > p {
+    width: 45%;
+    line-height: 50px;
+}
+
+.opskrift-billede {
+    width: 100%;
+    padding: 4%;
+}
+
+
+.ingredienser {
+    width: 100%;
+    padding: 0 4% 3% 4%;
+}
+
+.opskrift-index {
+    width: 100%;
+    background: #e5e1df;
+    padding: 8% 4%;
+}
+
+hr {
+    width: 100%;
+    margin-top: 2%;
+}
+
+.opskrift-index {
+    display: flex;
+    flex-direction: column;
+}
+
+.opskrift-index div h2 {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.opskrift-index div h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.opskrift-index div p {
+    font-weight: 300;
+    font-size: 13px;
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(auto, 120px);
+    grid-gap: 20px;
+    margin: 4% 4% 10%;
+}
+
+
+.box11 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-image: url(../images/bananmuffin-opskrift.jpeg);
+    background-size: cover;
+}
+
+.box22 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background: url(../images/avocado-opskrift.jpeg);
+    background-size: cover;
+}
+
+.text11 {
+    background: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    margin-top: 80px;
+    font-size: 10px;
+    color: #5E5A56;
+
+}
+
+.flex1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tegning-tekst {
+    width: 100%;
+    padding: 0% 4% 3% 4%;
+}
+
+.tegning-tekst p {
+    font-weight: 100;
+    padding: 2% 0;
+    color: #5E5A56;
+}
+
+.tegning {
+    width: 100%;
+
+}
+
+.tegning img {
+    width: 80%;
+    padding: 0 4% 4% 10%;
+}
+
+
+
+/******************* AMOS HISTORIE *************/
+
+.historie h1 {
+    padding-left: 10%;
+    font-size: 30px;
+}
+
+.historie p {
+    padding: 10% 0 0 10%;
+    font-weight: 100;
+}
+
+.tidslinje .mobile,
+.tidslinje .laptop {
+    width: 100%;
+    padding: 5%;
+}
+
+.tidslinje p {
+    font-size: 14px;
+    font-weight: 100;
+    padding: 5% 10% 3% 10%;
+}
+
+.tidslinje {
+    padding-bottom: 5%;
+}
+
+
+
+@media only screen and (max-width: 481px) {
+
+    .laptop {
+        display: none;
+    }
+
+}
+
+
+
+
+
+/*-------------------------- NAVIGATION -------------------------------*/
+@media only screen and (max-width: 900px) {
+
+    header {
+        display: block;
+    }
+
+    #logo-burger {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo-burger label {
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
+    #toggle:checked + #main-nav {
+        display: block;
+    }
+
+    #main-nav {
+        display: none;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    #main-nav li {
+        text-align: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+
+    #main-nav a {
+        margin: 0;
+        line-height: 50px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    #main-nav li:last-of-type {
+        border-bottom: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 481px) {
+
+    .logo1 {
+        width: 90px;
+        padding: 2%;
+    }
+
+    #logo-burger label {
+        font-size: 35px;
+    }
+
+    /*********** FORSIDE ************/
+
+    #home {
+        background-image: url(../images/amo-baggrund-laptop.jpg);
+        background-position: center;
+    }
+
+    #home h1 {
+        padding: 10% 20% 5% 30%;
+        font-size: 32px;
+        line-height: 45px;
+    }
+
+    .se-mere,
+    .se-mere1 {
+        width: 30%;
+        margin-left: 35%;
+    }
+
+    /************* VELKOMMEN VISNING AF PRODUKT ********/
+
+    #velkommen > .velkommen-tablet h3 {
+        font-size: 30px;
+        text-align: left;
+        padding-left: 10%;
+        padding-right: 5%;
+    }
+
+    .velkommen-tablet {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    .forside-billede {
+        width: 45%;
+        height: 40%;
+        padding: 4% 5% 5% 2%;
+        margin: 0;
+    }
+
+
+    #velkommen h3 {
+        font-size: 40px;
+        padding: 10% 2% 5%;
+    }
+
+
+    /*********** VISNING AF NYT DESIGN ********/
+
+    #nyt-design {
+        font-size: 20px;
+        padding-bottom: 10%;
+    }
+
+    #nyt-design h2 {
+        margin-bottom: 5%;
+        font-weight: 400;
+    }
+
+    #nyt-design img {
+        width: 60%;
+        height: 100%;
+        padding: 2%;
+    }
+
+    .ny-aabning {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 3%;
+    }
+
+    .nyt-logo {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .nyt-design-tekst {
+        padding: 0%;
+        margin: 5% 3% 5% 0;
+    }
+
+    .nyt-design-tekst1 {
+        padding: 0%;
+        margin: 5% 3% 5% 3%;
+    }
+
+    .p1 {
+        font-size: 18px;
+    }
+
+    .p2 {
+        font-size: 20px;
+    }
+
+    .p3 {
+        font-size: 16px;
+    }
+
+    #nyt-design > a > .laes-mere {
+        width: 40%;
+        margin-left: 30%;
+        padding: 5% 0 0 0;
+    }
+
+    /******* NATUR + **********/
+
+    #amo-natur {
+        padding-bottom: 5%;
+        padding-top: 5%;
+    }
+
+    #amo-natur p {
+        font-size: 18px;
+    }
+
+    #amo-natur img {
+        width: 30%;
+        padding-top: 0;
+    }
+
+    /******** OPSKRIFTER GRID *******/
+
+    #opskrifter {
+        margin-top: 0;
+        padding-bottom: 3%;
+    }
+
+    .container1 {
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(auto, 170px);
+        grid-gap: 10px;
+        margin: 3%;
+    }
+
+    .box1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .box2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .box3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .text1 {
+        margin-top: 115px;
+        font-size: 12px;
+    }
+
+    /********** HVORFOR NYT DESIGN? *********/
+
+    #nyt-design-hvorfor {
+        width: 100%;
+        margin-top: 8%;
+    }
+
+    .nytdesign-tekst {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 5% 10% 10% 10%;
+    }
+
+    .hvorfor1 {
+        padding-right: 5%;
+    }
+
+    .hvorfor2 {
+        padding-left: 5%;
+    }
+
+
+    /******** KØKKEN *******/
+
+    #amo-koekken {
+        display: flex;
+    }
+
+    #amo-koekken div h3 {
+        padding: 8% 5% 3% 5%;
+        text-align: left;
+        font-size: 20px
+    }
+
+    #amo-koekken div p {
+        padding: 2% 5% 3%;
+        text-align: left;
+    }
+
+    #amo-koekken div img {
+        padding: 5% 2%;
+    }
+
+
+    /*************** OPSKRIFTER - SEPERAT ************/
+
+
+
+    .opskrift-overskrift h1 {
+        padding: 10% 15% 0% 5%;
+    }
+
+    .info-opskrift {
+        padding: 4% 50% 4% 5%;
+    }
+
+    .info-opskrift > .antal > img,
+    .info-opskrift > .tid > img {
+        width: 40%;
+        height: 100%;
+        padding: 4%;
+    }
+
+    .info-opskrift > .antal > p,
+    .info-opskrift > .tid > p {
+        width: 45%;
+    }
+
+    .opskrift-billede {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .opskrift-index {
+        flex-direction: row;
+        padding-bottom: 5%;
+        margin-bottom: 3%;
+    }
+
+    .opskrift-index div {
+        width: 50%;
+        padding: 4%;
+    }
+
+    .opskrift-index div h2 {
+        font-size: 25px;
+    }
+
+    .opskrift-index div h3 {
+        font-weight: 400;
+        font-size: 14px;
+    }
+
+    .opskrift-index div p {
+        font-size: 15px;
+    }
+
+    .container2 {
+        grid-auto-rows: minmax(auto, 200px);
+        margin-bottom: 5%;
+    }
+
+    .text11 {
+        margin-top: 130px;
+        font-size: 12px;
+    }
+
+    .wrap {
+        display: flex;
+    }
+
+
+
+
+
+    /********* AMOS HISTORIE SEPERAT ***********/
+
+    .mobile {
+        display: none;
+    }
+
+    .historie h1 {
+        padding-left: 20%;
+        font-size: 40px;
+    }
+
+    .historie p {
+        font-size: 30px;
+        padding-left: 20%;
+    }
+
+
+    .tidslinje p {
+        font-size: 16px;
+        padding: 5% 20% 3% 20%;
+    }
+
+    /********** FOOTER ***********/
+
+    footer {
+        padding: 0% 0% 4% 6%;
+    }
+
+    .kontakt {
+        width: 30%
+    }
+
+    .find-os {
+        width: 35%;
+        padding-left: 5%;
+    }
+
+    .footer-logo {
+        width: 30%;
+    }
+
+    .kontakt h3,
+    .find-os h3 {
+        font-size: 24px;
+    }
+
+    .kontakt p,
+    .find-os p {
+        font-size: 15px;
+    }
+
+    footer .footer-logo .lantmannen {
+        padding-top: 20%;
+        width: 70%;
+        margin-left: 45%;
+    }
+
+    footer .footer-logo .natur {
+        padding-top: 10%;
+        width: 40%;
+        margin-left: 70%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+    .logo1 {
+        width: 110px;
+    }
+
+    /*********** FORSIDE *******/
+
+    #home {
+        padding: 0;
+        width: 100%;
+        background-size: cover;
+    }
+
+    #home h1 {
+        text-align: center;
+        font-size: 35px;
+        line-height: 55px;
+        padding: 18% 0 2% 0;
+    }
+
+    .se-mere {
+        width: 20%;
+        margin-left: 40%
+    }
+
+    /************* NYT PRODUKT VISNING ******/
+
+    #laptop {
+        display: flex;
+        width: 100%;
+    }
+
+    .velkommen-tablet {
+        flex-direction: column;
+        padding-top: 4%;
+        width: 100%;
+    }
+
+    #velkommen > .velkommen-tablet > h3 {
+        text-align: center;
+    }
+
+    .velkommen-tablet .forside-billede {
+        width: 70%;
+        margin: 5% 15%;
+    }
+
+    .boks,
+    .se-mere1 {
+        display: none;
+    }
+
+    .laes-mere {
+        display: none;
+    }
+
+
+    #nyt-design {
+        padding-bottom: 0;
+        background-color: whitesmoke;
+
+    }
+
+    /******* NATUR + **********/
+
+    #amo-natur {
+        padding: 2% 15%;
+        flex-direction: row-reverse;
+        margin-bottom: 3%; 
+    }
+
+    #amo-natur p {
+        margin: 0;
+        width: 70%;
+        padding-right: 10%;
+        padding-top: 2%;
+    }
+
+
+    #amo-natur img {
+        width: 20%;
+        margin-right: 10%;
+    }
+
+
+    /************* OPSKRIFTER FORSIDE ********/
+
+    .container1 {
+        grid-auto-rows: minmax(auto, 270px);
+        grid-gap: 10px;
+        margin: 4%;
+    }
+
+
+    .box1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+
+    .box2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+
+    .box3 {
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+
+    .text1 {
+        margin-top: 200px;
+        font-size: 20px;
+    }
+    
+    .container1 .box1 p {
+        text-decoration-line: none;      
+    }
+    
+    
+
+    #opskrifter {
+        font-size: 40px;
+        padding-bottom: 0;
+    }
+
+    /************ HVORFOR NYT DESIGN? *******/
+
+    .nytdesign-tekst {
+        padding: 5% 10%;
+    }
+
+    #nyt-design-hvorfor h2 {
+        font-size: 40px;
+        margin-top: 5%;
+    }
+
+    #nyt-design-hvorfor .nytdesign-tekst .hvorfor1 p {
+        font-size: 17px;
+    }
+
+    #nyt-design-hvorfor .nytdesign-tekst .hvorfor2 p {
+        font-size: 17px;
+    }
+
+    #nyt-design-hvorfor {
+        margin-top: 0;
+    }
+
+
+    /************* AMO KØKKEN ********/
+
+    #amo-koekken .div1 h3 {
+        text-align: left;
+        font-size: 30px;
+        margin-top: 10%;
+        padding-left: 10%;
+    }
+
+    #amo-koekken .div1 p {
+        text-align: left;
+        font-size: 17px;
+        padding-left: 10%;
+    }
+
+    #amo-koekken .div2 img {
+        padding: 2% 10% 10%;
+        width: 100%;
+        height: 100%;
+    }
+
+    #amo-koekken .div1,
+    #amo-koekken .div2 {
+        width: 50%;
+    }
+
+    #amo-koekken {
+        width: 100%;
+    }
+
+
+    /***************** AMOS HISTORIE *********/
+
+    .tidslinje p {
+        padding: 0 30% 5%;
+        font-size: 18px;
+    }
+
+    /*************** OPSKRIFTER - SEPERAT ************/
+
+
+    .opskrift-overskrift h1 {
+        padding: 5% 15% 0% 10%;
+    }
+
+    .info-opskrift {
+        padding: 1% 60% 4% 10%;
+    }
+
+    .info-opskrift > .antal > img,
+    .info-opskrift > .tid > img {
+        width: 40%;
+        height: 100%;
+        padding: 4%;
+    }
+
+    .info-opskrift > .antal > p,
+    .info-opskrift > .tid > p {
+        width: 35%;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .opskrift-billede,
+    .opskrift-index {
+        width: 50%;
+    }
+
+    .opskrift-billede {
+        padding: 3% 1% 3% 3%;
+        height: 50%;
+    }
+
+    .opskrift-index {
+        background: none;
+        padding: 3% 3% 0% 1%;
+    }
+
+    .opskrift-index div {
+        background: #e5e1df;
+    }
+
+
+    .container2 {
+        grid-auto-rows: minmax(auto, 200px);
+        padding: 0% 1% 3% 3%;
+        margin: 0;
+        width: 50%;
+    }
+
+    .text11 {
+        margin-top: 140px;
+        font-size: 13px;
+    }
+
+    .wrap {
+        width: 50%;
+    }
+
+    .flex1 {
+        flex-direction: row;
+    }
+
+
+
+    /************ FOOTER ********/
+
+
+    footer {
+        padding: 0% 0% 2% 6%;
+        background-size: cover;
+        width: 100%;
+    }
+
+    .kontakt {
+        width: 20%
+    }
+    
+    .kontakt p, .find-os p {
+        font-size: 20px; 
+    }
+
+    .find-os {
+        width: 25%;
+        padding-left: 5%;
+    }
+
+    .footer-logo {
+        width: 45%;
+    }
+
+    .kontakt h3,
+    .find-os h3 {
+        font-size: 30px;
+    }
+
+    footer .footer-logo .lantmannen {
+        padding-top: 10%;
+        width: 30%;
+        margin-left: 90%;
+    }
+
+    footer .footer-logo .natur {
+        padding-top: 5%;
+        width: 18%;
+        margin-left: 100%;
+    }
+
+
+    .rowrow {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    #nyt-design-hvorfor,
+    #indhold {
+        width: 50%;
+        margin: 2%;
+    }
+
+    #vend-om {
+        display: flex; 
+        flex-direction: column-reverse; 
+    }
+
+}
